@@ -49,7 +49,7 @@ function Form() {
   };
   return (
     <div className="Form">
-      <div className="title">Sign Up</div>
+      <div className="title">Yoga Sign Up</div>
       <div className="inputs">
         <form onSubmit={submitHandler}>
           <input type="text" name="firstName" value={formState.firstName || ''} onChange={changeHandler} ref={register} placeholder="First Name..."/>
@@ -63,7 +63,14 @@ function Form() {
           
           <input type="text" name="email" value={formState.email || ''} onChange={changeHandler} placeholder="Email..." ref={register}/>
           <p> {errors.email && "Email Id should be provided"} </p>
-          
+      
+          <select id="time" name="time">
+            <option value="6-7AM">6 AM - 7 AM</option>
+            <option value="7-8AM">7 AM - 8 AM</option>
+            <option value="8-9AM">8 AM - 9 AM</option>
+            <option value="5-6PM">5 PM - 6 PM</option>
+          </select>
+          <br/>
           <input type="password" name="password" value={formState.password || ''} onChange={changeHandler} placeholder="Password..." ref={register}/>
           <p> {errors.password && "Password should have 8 to 15 characters"} </p>
           
