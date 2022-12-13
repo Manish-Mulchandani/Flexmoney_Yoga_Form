@@ -21,7 +21,7 @@ We are providing users with a Admission form with required values like name, age
     5. Email<br/>
     6. Password<br/>
 
-![ER Diagram](https://github.com/Manish-Mulchandani/Flexmoney_Yoga_Form/blob/main/ER_Diagram.png?raw=true)
+![ER Diagram](https://github.com/Manish-Mulchandani/Flexmoney_Yoga_Form/blob/main/ER_Diagram.png)
 
 
 # Getting Started with Create React App
