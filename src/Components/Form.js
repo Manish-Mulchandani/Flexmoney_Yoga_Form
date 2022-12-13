@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-
 const schema = yup.object().shape({
   firstName: yup.string().required(),
   lastName: yup.string().required(),
@@ -26,35 +25,36 @@ function Form() {
     setFormState({...formState, [event.target.name]: event.target.value });
   };*/
 
-  const submitForm = (data) => {
+  /*const submitForm = (data) => {
     console.log(data)
     alert("Form filled successfully")
-  }  
+  }  */
 
-  /*const submitHandler = (data) => {
-    //event.preventDefault();
-    console.log(data)
+  const submitHandler = (data) => {
+    // event.preventDefault();
+    //console.log(data.email)
     const config ={
       SecureToken : "f31517e2-4155-45cf-9dfa-a549930b5b34",
-      To : formState.email,
+      To : data.email,
       From : "19bcs039@ietdavv.edu.in",
       Subject : "Registration Successful",
-      Body : `Welcome ${formState.firstName}, You have been registered.
+      Body : `Welcome ${data.firstName}, You have been registered.
               To complete payment, pay using the following link.
               {Payment Link} `,
     };
+    //console.log(window.Email);
     if(window.Email) {
       window.Email.send(config).then(() => alert("Form submitted successfull. Check your mail for further process."));
     }
 
     //console.log(data);
     //alert("Form Submitted Successfully. Check your mail for payment.");
-  };*/
+  };
   return (
     <div className="Form">
       <div className="title">Yoga Sign Up</div>
       <div className="inputs">
-        <form onSubmit={handleSubmit(handleSubmit(submitForm))}>
+        <form onSubmit={handleSubmit(submitHandler)}>
           <input type="text" name="firstName" /*value={formState.firstName} onChange={changeHandler}*/ ref={register} placeholder="First Name..."/>
           <p> {errors.firstName && "First Name should be provided"} </p>
           
@@ -77,7 +77,7 @@ function Form() {
           <input type="password" name="password" /*value={formState.password} onChange={changeHandler}*/ placeholder="Password..." ref={register}/>
           <p> {errors.password && "Password should have 8 to 15 characters"} </p>
           
-          <input type="password" name="confirmPassword" /*value={formState.confirmPassword} onChange={changeHandler} */placeholder="Confirm Password..." ref={register}/>
+          <input type="password" name="confirmPassword" /*value={formState.confirmPassword} onChange={changeHandler}*/ placeholder="Confirm Password..." ref={register}/>
           <p> {errors.confirmPassword && "Passwords Should Match!"} </p>
           
           <input type="submit" id="submit" />
