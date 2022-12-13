@@ -8,18 +8,19 @@ We are providing users with a Admission form with required values like name, age
 
 # Technologies Used
 
- React JS -> For Building the web Application
+ React JS -> <br/>
+ For Building the web Application <br/>
  Yup -> For validating the user Forms
 
 # Database
 
- The Schema of the user would :-
-    First Name
-    Last Name
-    Age 
-    Timings
-    Email
-    Password
+ The Schema of the user would :-<br/>
+    First Name<br/>
+    Last Name<br/>
+    Age <br/>
+    Timings<br/>
+    Email<br/>
+    Password<br/>
 
 ![ER Diagram](https://github.com/Manish-Mulchandani/Flexmoney_Yoga_Form/blob/main/ER_Diagram.png?raw=true)
 
