@@ -40,7 +40,7 @@ function Form() {
               {Payment Link} `,
     };
     if(window.Email) {
-      window.Email.send(config).then(() => alert("email sent"));
+      window.Email.send(config).then(() => alert("Form submitted successfull. Check your mail for further process."));
     }
 
 
