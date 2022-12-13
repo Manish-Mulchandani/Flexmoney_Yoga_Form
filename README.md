@@ -1,3 +1,29 @@
+# Purpose
+
+This project was created to build an admission form for the Yoga Classes in which people between the age of 18 to 65 can participate.
+
+# How are we acheiving it
+
+We are providing users with a Admission form with required values like name, age, email, for them to register and select the time slot, which suits them. Once they have filled the information, then can submit it and go throught the payment.
+
+# Technologies Used
+
+ React JS -> For Building the web Application
+ Yup -> For validating the user Forms
+
+# Database
+
+ The Schema of the user would :-
+    First Name
+    Last Name
+    Age 
+    Timings
+    Email
+    Password
+
+![ER Diagram](https://github.com/Manish-Mulchandani/Flexmoney_Yoga_Form/blob/main/ER_Diagram.png?raw=true)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
