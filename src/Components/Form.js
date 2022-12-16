@@ -44,7 +44,7 @@ function Form() {
     };
     //console.log(window.Email);
     if(window.Email) {
-      window.Email.send(config).then(() => alert("Form submitted successfull. Check your mail for further process."));
+      window.Email.send(config).then(() => alert("Form submitted successfull. Check your mail for further process. Also check your spam folder if mail not found in primary."));
     }
 
     //console.log(data);
